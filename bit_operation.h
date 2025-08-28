@@ -9,6 +9,10 @@
 #ifndef BIT_OPERATION_H_
 #define BIT_OPERATION_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 // Set a specific bit to 1
 // Example: data = 0b00000000; BIT_SET(data, 1 << 2); // data = 0b00000100 (4)
 #define BIT_SET(data,bit)	 ( (data) |= (bit) )
@@ -61,4 +65,9 @@
 // Example: data = 0b11000000; BIT_ROT_RIGHT(data, 2, 8); // data = 0b00110000 (48)
 #define BIT_ROT_RIGHT(data, shift, size) ((data) = (((data) >> (shift)) | ((data) << ((size) - (shift)))) & ((1ULL << (size)) - 1))
 
+#ifdef __cplusplus
+}
+#endif
+
 #endif /* BIT_OPERATION_H_ */
+
