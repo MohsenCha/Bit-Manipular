@@ -1,3 +1,4 @@
 # Bit Manipular
-Bit Manipulation Library in C
-written using macros and for fast operation, low memory signature, and only one header file
+Bit Manipulation Library for C
+
+written using macros for fast operation, low memory signature, and only one header file.
